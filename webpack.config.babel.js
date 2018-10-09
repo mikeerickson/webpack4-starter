@@ -8,13 +8,14 @@ import path from 'path';
 import WebpackNotifierPlugin from 'webpack-notifier';
 
 const config = {
+  stats: 'errors-only',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'public', 'js'),
     filename: 'bundle.js'
   },
   plugins: [
-    new WebpackNotifierPlugin(),
+    new WebpackNotifierPlugin({title: 'Webpack Status', excludeWarnings: true}),
   ]
 };
 

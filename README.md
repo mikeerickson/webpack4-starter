@@ -1,8 +1,8 @@
-# Webpack4 Starter
+# Webpack 4 Starter
 
 ## Description
 
-Webpack4 Starter w/ Babel Integration.
+Webpack 4 Starter w/ Babel Integration.
 
 - Use ES6 Everywhere
 - Use ES6 Imports in `webpack.config` with babel switch
@@ -10,13 +10,13 @@ Webpack4 Starter w/ Babel Integration.
 ### Usage
 
 - Execute `npm run dev` for development build
-- Execute `npm run dev:watch` for development watch module
+- Execute `npm run dev:watch` for development watch mode
 - Execute `npm run build` for production build (minified)
 
 ### Miscellaneous
 
-- Uses `cd-messenger` module to colorize console output
-  - You can ignore the warning produced from this module
+- Uses [`cd-messenger`](https://github.com/mikeerickson/cd-messenger) module to colorize console output
+  - _Note: The warnings produced from this module are suppressed_
 
 ### License
 
