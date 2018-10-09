@@ -6,10 +6,11 @@
 
 import path from 'path';
 import chalk from 'chalk';
+import webpack from 'webpack';
 import WebpackNotifierPlugin from 'webpack-notifier';
 import ProgressBarPlugin from 'progress-bar-webpack-plugin';
 
-const config = {
+const webpackConfig = {
   stats: 'errors-only',
   entry: './src/index.js',
   output: {
@@ -25,4 +26,4 @@ const config = {
   ]
 };
 
-export default config;
+export default webpackConfig;
