@@ -5,7 +5,9 @@
  */
 
 import path from 'path';
+import chalk from 'chalk';
 import WebpackNotifierPlugin from 'webpack-notifier';
+import ProgressBarPlugin from 'progress-bar-webpack-plugin';
 
 const config = {
   stats: 'errors-only',
@@ -16,6 +18,10 @@ const config = {
   },
   plugins: [
     new WebpackNotifierPlugin({title: 'Webpack Status', excludeWarnings: true}),
+    new ProgressBarPlugin({
+      format: '  Building [:bar] ' + chalk.green.bold(':percent') + ' (:elapsed seconds)',
+      clear: true
+    })
   ]
 };
 
