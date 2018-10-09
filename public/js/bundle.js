@@ -559,7 +559,7 @@ eval("module.exports = function(module) {\r\n\tif (!module.webpackPolyfill) {\r\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var cd_messenger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cd-messenger */ \"./node_modules/cd-messenger/index.js\");\n/* harmony import */ var cd_messenger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(cd_messenger__WEBPACK_IMPORTED_MODULE_0__);\n\n\n\ncd_messenger__WEBPACK_IMPORTED_MODULE_0___default.a.success(' Webpack4 Starter w/ Babel Integration ');\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var cd_messenger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cd-messenger */ \"./node_modules/cd-messenger/index.js\");\n/* harmony import */ var cd_messenger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(cd_messenger__WEBPACK_IMPORTED_MODULE_0__);\n\n\n\ncd_messenger__WEBPACK_IMPORTED_MODULE_0___default.a.success(' Webpack4 Starter w/ Babel Integration ');\ncd_messenger__WEBPACK_IMPORTED_MODULE_0___default.a.info(` Built ${new Date()} `);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
