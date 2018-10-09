@@ -1,0 +1,24 @@
+body {
+  padding: 25px;
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.dev {
+  font-family: "Dank Mono", "Source Code Pro", monospace;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+code {
+  font-size: 13px;
+  font-family: "Dank Mono", "Source Code Pro", monospace;
+}
+
+.comment {
+  color: lightgray;
+}

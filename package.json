@@ -1,0 +1,26 @@
+{
+  "name": "webpack4-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --hide-modules",
+    "dev:watch": "webpack --watch --hide-modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Erickson <codedungeon@gmail.com> (https://github.com/mikeerickson)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.1.2",
+    "@babel/preset-env": "7.1.0",
+    "@babel/register": "7.0.0",
+    "babel-loader": "8.0.4",
+    "webpack": "4.20.2",
+    "webpack-cli": "3.1.2",
+    "webpack-notifier": "1.6.0"
+  },
+  "dependencies": {
+    "cd-messenger": "2.7.26",
+    "chalk": "2.4.1"
+  }
+}
