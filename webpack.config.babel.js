@@ -18,10 +18,10 @@ const webpackConfig = {
     filename: 'bundle.js'
   },
   plugins: [
-    new WebpackNotifierPlugin({title: 'Webpack Status', excludeWarnings: true}),
+    new WebpackNotifierPlugin({title: 'Webpack Build Status', excludeWarnings: true}),
     new ProgressBarPlugin({
-      format: '  Building [:bar] ' + chalk.green.bold(':percent') + ' (:elapsed seconds)',
-      clear: true
+      width: 50,
+      format: chalk.yellow.bold('  Building [:bar] :percent (:elapsed seconds)')
     })
   ]
 };
