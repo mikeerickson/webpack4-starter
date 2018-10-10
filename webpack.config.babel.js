@@ -4,24 +4,24 @@
  * -- run dev -- or -- run dev:watch
  */
 
-import path from 'path';
-import chalk from 'chalk';
-import webpack from 'webpack';
-import WebpackNotifierPlugin from 'webpack-notifier';
-import ProgressBarPlugin from 'progress-bar-webpack-plugin';
+import path from "path";
+import chalk from "chalk";
+import webpack from "webpack";
+import WebpackNotifierPlugin from "webpack-notifier";
+import ProgressBarPlugin from "progress-bar-webpack-plugin";
 
 const webpackConfig = {
-  stats: 'errors-only',
-  entry: './src/index.js',
+  stats: "errors-only",
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, 'public', 'js'),
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, "public", "js"),
+    filename: "bundle.js"
   },
   plugins: [
-    new WebpackNotifierPlugin({title: 'Webpack Build Status', excludeWarnings: true}),
+    new WebpackNotifierPlugin({ title: "Webpack Build Status", excludeWarnings: true }),
     new ProgressBarPlugin({
       width: 50,
-      format: chalk.yellow.bold('  Building [:bar] :percent (:elapsed seconds)')
+      format: chalk.yellow.bold("  Building [:bar] :percent (:elapsed seconds)")
     })
   ]
 };
