@@ -13,10 +13,18 @@ Webpack 4 Starter w/ Babel Integration.
 - Execute `npm run dev:watch` for development watch mode
 - Execute `npm run build` for production build (minified)
 
+### TODO
+
+- [x] Integrate CSS Bundling
+- [ ] Add ESLint Processing
+- [ ] Add StyleLint Processing
+- [ ] Integrate WebpackTodoPlugin (Leasot)
+- [ ] Add SCSS
+
 ### Miscellaneous
 
 - Uses [`cd-messenger`](https://github.com/mikeerickson/cd-messenger) module to colorize console output
-  - _Note: The warnings produced from this module are suppressed_
+  - _Note: The warnings produced from this module are suppressed and are not harmful_
 
 ### License
 
