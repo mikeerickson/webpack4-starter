@@ -17,6 +17,14 @@ const webpackConfig = {
     path: path.resolve(__dirname, "public", "js"),
     filename: "bundle.js"
   },
+  module: {
+
+    rules: [
+      { test: /\.(js)$/, exclude: /node_modules/, use: "babel-loader" },
+      { test: /\.css$/, use: ["style-loader", "css-loader"] }
+    ]
+
+  },
   plugins: [
     new WebpackNotifierPlugin({ title: "Webpack Build Status", excludeWarnings: true }),
     new ProgressBarPlugin({
