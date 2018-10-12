@@ -1,9 +1,5 @@
-### TODOs
-| Filename | line # | TODO
-|:------|:------:|:------
-| src/index.js | 5 | Show this in TODO report
 
-### FIXMEs
-| Filename | line # | FIXME
-|:------|:------:|:------
-| src/index.js | 6 | This should also appear
+./src/index.js
+  line 5  TODO  Show this in TODO report
+
+ ✖ 1 todo/fixme found
