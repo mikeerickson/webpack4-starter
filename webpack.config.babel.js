@@ -34,7 +34,10 @@ const webpackConfig = {
       width: 50,
       format: chalk.yellow.bold("  Building [:bar] :percent (:elapsed seconds)")
     }),
-    new TodoWebpackPlugin({ console: true, })
+    new TodoWebpackPlugin({
+      console: true,
+      tags: ["info", "review"]
+    })
   ]
 };
 

@@ -3,3 +3,4 @@ public/js
 dist/
 
 TODO.md
+*.log

@@ -4,15 +4,15 @@
   "description": "Webpack 4 Starter w/ Babel Integration",
   "main": "src/index.js",
   "scripts": {
-    "build": "npm run clear && webpack --hide-modules --mode production",
+    "build": "npm run clear && ./node_modules/.bin/webpack --hide-modules --mode production",
     "clear": "rm -rf ./public/js",
-    "dev": "webpack --hide-modules --mode development",
-    "dev:watch": "webpack --watch --mode development --hide-modules",
+    "dev": "./node_modules/.bin/webpack --hide-modules --mode development",
+    "dev:watch": "./node_modules/.bin/webpack --watch --mode development --hide-modules",
     "lint": "eslint \"./src/**/*.js\"",
     "prod": "npm run build",
     "serve": "lite-server --baseDir=\"public\"",
     "test": "echo \"Error: No Tests Specified\" && exit 1",
-    "todo": "leasot -x './src/**/*.js'",
+    "todo": "leasot -x --tags info,review './src/**/*.js'",
     "todo:write": "npm run todo -- > TODO.md && echo './TODO.md Created...'"
   },
   "author": "Mike Erickson <codedungeon@gmail.com> (https://github.com/mikeerickson)",
@@ -28,14 +28,15 @@
     "lite-server": "2.4.0",
     "progress-bar-webpack-plugin": "1.11.0",
     "style-loader": "0.23.1",
-    "todo-webpack-plugin": "1.9.2",
+    "todo-webpack-plugin": "1.9.6",
     "webpack": "4.20.2",
     "webpack-cli": "3.1.2",
     "webpack-notifier": "1.6.0"
   },
   "dependencies": {
     "cd-messenger": "2.7.26",
-    "chalk": "2.4.1"
+    "chalk": "2.4.1",
+    "dumper.js": "1.2.0"
   },
   "repository": {
     "type": "git",

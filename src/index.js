@@ -1,7 +1,11 @@
 import msg from "cd-messenger";
 import "./app.css";
-import * as dt from "./lib/timestamp";
+import { timestamp } from "./lib/timestamp";
+console.log();
 
 // TODO: Show this in TODO report
+// FIXME: This should be fixed
+// INFO: This is some information
+// REVIEW: This needs to be reviewed
 msg.success(" Webpack 4 Starter w/ Babel Integration ");
-msg.info(` Rendered ${dt.timestamp(null, false)} `);
+msg.info(` Rendered ${timestamp(null, false)} `);
