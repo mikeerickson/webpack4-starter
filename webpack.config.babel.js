@@ -21,10 +21,9 @@ const webpackConfig = {
     filename: "bundle.js"
   },
   module: {
-    // TODO: Add ESLint
     // TODO: Add StyleLint
     rules: [
-      { test: /\.(js)$/, exclude: /node_modules/, use: "babel-loader" },
+      { test: /\.(js)$/, exclude: /node_modules/, use: ["babel-loader", "eslint-loader"] },
       { test: /\.css$/, use: ["style-loader", "css-loader"] },
       { test: /\.scss$/, use: ["style-loader", "css-loader", "sass-loader"] }
     ]
