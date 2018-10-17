@@ -8,7 +8,7 @@
     "clear": "rm -rf ./public/js",
     "dev": "./node_modules/.bin/webpack --hide-modules --mode development",
     "dev:watch": "./node_modules/.bin/webpack --watch --mode development --hide-modules",
-    "lint": "eslint \"./src/**/*.js\"",
+    "lint": "eslint \"./src/**/*.js\" || true",
     "prod": "npm run build",
     "serve": "lite-server --baseDir=\"public\"",
     "test": "echo \"Error: No Tests Specified\" && exit 1",
