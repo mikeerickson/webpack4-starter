@@ -1,6 +1,6 @@
 import msg from "cd-messenger";
 import "./app.css";
-import "./sass/test.scss";
+import "./sass/app.scss";
 import { timestamp } from "./lib/timestamp";
 console.log();
 
