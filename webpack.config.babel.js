@@ -12,6 +12,7 @@ import webpack from "webpack";
 import WebpackNotifierPlugin from "webpack-notifier";
 import ProgressBarPlugin from "progress-bar-webpack-plugin";
 import TodoWebpackPlugin from "todo-webpack-plugin";
+import StyleLintWebpackPlugin from "stylelint-webpack-plugin";
 
 const webpackConfig = {
   stats: "errors-only",
@@ -37,7 +38,8 @@ const webpackConfig = {
     new TodoWebpackPlugin({
       console: true,
       tags: ["info", "review"]
-    })
+    }),
+    new StyleLintWebpackPlugin()
   ]
 };
 
