@@ -9,7 +9,7 @@
     "dev": "./node_modules/.bin/webpack --hide-modules --mode development",
     "dev:watch": "./node_modules/.bin/webpack --watch --mode development --hide-modules",
     "lint": "eslint \"./src/**/*.js\" || true",
-    "lint:css": "stylelint \"./src/**/*.*css\" || true",
+    "lint:css": "stylelint \"./src/**/*.s?(a|c)ss\" || true",
     "prod": "npm run build",
     "serve": "lite-server --baseDir=\"public\"",
     "test": "echo \"Error: No Tests Specified\" && exit 1",

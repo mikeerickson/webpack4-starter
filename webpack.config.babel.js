@@ -38,7 +38,9 @@ const webpackConfig = {
       console: true,
       tags: ["info", "review"]
     }),
-    new StyleLintWebpackPlugin()
+    new StyleLintWebpackPlugin({
+      files: "./src/**/*.s?(a|c)ss"
+    })
   ]
 };
 
