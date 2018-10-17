@@ -32,7 +32,7 @@ const webpackConfig = {
     new WebpackNotifierPlugin({ title: "Webpack Build Status", excludeWarnings: true }),
     new ProgressBarPlugin({
       width: 50,
-      format: chalk.yellow.bold("  Building [:bar] :percent (:elapsed seconds)")
+      format: chalk.green.bold("  Building [:bar] :percent (:elapsed seconds)")
     }),
     new TodoWebpackPlugin({
       console: true,
